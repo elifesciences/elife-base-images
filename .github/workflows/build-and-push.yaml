@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  REPO_PREFIX: scottaubrey/elifesciences-
+  REPO_PREFIX: elifesciences/
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
