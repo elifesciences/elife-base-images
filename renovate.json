@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "assignees": [
+      "scottaubrey"
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^php_image_digests.txt"],
+      "matchStrings": ["PHP_IMAGE_.+=(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)"],
+      "datasourceTemplate": "docker"
+    }
+  ],
+  "includePaths": [
+    "php_image_digests.txt",
+    ".github/**"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "major"],
+      "enabled": false
+    }
+  ],
+  "automerge": true
+}
