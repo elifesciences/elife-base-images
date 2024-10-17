@@ -16,6 +16,8 @@ COPY --chown=elife:elife utils/ /srv/bin/
 
 COPY config/php-7.1-elife.ini ${PHP_INI_DIR}/conf.d/elife.ini
 COPY config/php-ext-opcache.ini ${PHP_INI_DIR}/conf.d/ext-opcache.ini
+# Override for IPv4 Only FPM
+COPY config/zz-docker.conf /usr/local/etc/php-fpm.d/zz-docker.conf
 
 
 # CLI target
