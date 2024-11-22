@@ -6,7 +6,7 @@
 
 ### Unified PHP image
 
-- [unified docker PHP image repository (with tags for `7.1-cli`, `7.1-fpm`, `7.3-cli`, `7.3-fpm`, `7.4-cli`, `7.4-fpm`, `8.0-cli`, `8.0-fpm`, `8.1-cli`, `8.1-fpm`, `8.2-cli`, `8.2-fpm`, `8.3-cli` and `8.3-fpm)`](https://github.com/elifesciences/elife-base-images/pkgs/container/php)
+- [unified docker PHP image repository (with tags for `7.1-cli`, `7.1-fpm`, `7.3-cli`, `7.3-fpm`, `7.4-cli`, `7.4-fpm`, `8.0-cli`, `8.0-fpm`, `8.1-cli`, `8.1-fpm`, `8.2-cli`, `8.2-fpm`, `8.3-cli`, `8.3-fpm`, `8.4-cli` and `8.4-fpm)`](https://github.com/elifesciences/elife-base-images/pkgs/container/php)
 
 NOTE: there is no `latest` tag - instead, specify the php version and `-cli` or `-fpm` sufix you desire, e.g. `docker pull ghcr.io/elifesciences/php:7.4-cli`
 NOTE2: pinning using sha digest is highly recommended
