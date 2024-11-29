@@ -1,14 +1,19 @@
 {
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "assignees": [
-      "scottaubrey"
+    "scottaubrey"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["^php_image_digests.txt"],
-      "matchStrings": ["PHP_IMAGE_.+=(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)"],
+      "customType": "regex",
+      "fileMatch": [
+        "^php_image_digests.txt"
+      ],
+      "matchStrings": [
+        "PHP_IMAGE_.+=(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)"
+      ],
       "datasourceTemplate": "docker"
     }
   ],
@@ -18,7 +23,10 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "major"],
+      "matchUpdateTypes": [
+        "minor",
+        "major"
+      ],
       "enabled": false
     }
   ],
