@@ -109,3 +109,15 @@ test-python-3.12:
 	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.12 test
 test-python-3.13:
 	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.13 test
+
+# build and test targets
+build-and-test-php: build-and-test-php-7.1 build-and-test-php-7.2 build-and-test-php-7.3 build-and-test-php-7.4 build-and-test-php-8.0 build-and-test-php-8.1  build-and-test-php-8.2  build-and-test-php-8.3 build-and-test-php-8.4
+build-and-test-php-7.1: build-php-7.1 test-php-7.1
+
+build-and-test-python: build-and-test-python-3.8 build-and-test-python-3.9 build-and-test-python-3.10 build-and-test-python-3.11 build-and-test-python-3.12 build-and-test-python-3.13
+build-and-test-python-3.8: build-python-3.8 test-python-3.8
+build-and-test-python-3.9: build-python-3.9 test-python-3.9
+build-and-test-python-3.10: build-python-3.10 test-python-3.10
+build-and-test-python-3.11: build-python-3.11 test-python-3.11
+build-and-test-python-3.12: build-python-3.12 test-python-3.12
+build-and-test-python-3.13: build-python-3.13 test-python-3.13
