@@ -14,7 +14,7 @@ BASE_IMAGE=$(PYTHON_IMAGE_$(PYTHON_VERSION))
 
 REPO_SUFFIX=python
 REPO=$(REPO_PREFIX)$(REPO_SUFFIX)
-PYTHON_VERSION_TAG=$(REPO_PREFIX)$(REPO_SUFFIX):$(PYTHON_VERSION)-$1
+PYTHON_VERSION_TAG=$(REPO_PREFIX)$(REPO_SUFFIX):$(PYTHON_VERSION)
 
 docker_build_options=--label org.label-schema.schema-version=1.0 \
 				--label org.label-schema.vcs-ref=$(COMMIT) \
