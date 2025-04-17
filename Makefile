@@ -121,3 +121,17 @@ build-and-test-python-3.10: build-python-3.10 test-python-3.10
 build-and-test-python-3.11: build-python-3.11 test-python-3.11
 build-and-test-python-3.12: build-python-3.12 test-python-3.12
 build-and-test-python-3.13: build-python-3.13 test-python-3.13
+
+buildx-and-push-python: buildx-and-push-python-3.8 buildx-and-push-python-3.9 buildx-and-push-python-3.10 buildx-and-push-python-3.11 buildx-and-push-python-3.12 buildx-and-push-python-3.13
+buildx-and-push-python-3.8:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.8 buildx
+buildx-and-push-python-3.9:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.9 buildx
+buildx-and-push-python-3.10:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.10 buildx
+buildx-and-push-python-3.11:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.11 buildx
+buildx-and-push-python-3.12:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.12 buildx
+buildx-and-push-python-3.13:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.13 buildx
