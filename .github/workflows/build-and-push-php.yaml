@@ -1,6 +1,9 @@
-name: build-and-push
+name: build-and-push-php
 on:
   push:
+    paths:
+      - '!python_image_digests.txt'
+      - '!Makefile-python'
     branches:
       - 'master'
 
