@@ -1,5 +1,6 @@
 # THESE digests are read by Makefile-python to get a stable image
 
+
 PYTHON_IMAGE_3.8=python:3.8-slim-bullseye@sha256:e191a71397fd61fbddb6712cd43ef9a2c17df0b5e7ba67607128554cd6bff267
 PYTHON_IMAGE_3.9=python:3.9-slim-bullseye@sha256:4e8b1789f998bfd9d1a7161c746f5087754f3b20483d032f092e179bb78e510b
 PYTHON_IMAGE_3.10=python:3.10-slim-bullseye@sha256:86feb2df29bff296cad3845e1664a6d0efb795489998dcb8ec2937f4426ab5c3
