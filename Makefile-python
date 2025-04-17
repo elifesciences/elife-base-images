@@ -31,7 +31,7 @@ build_image = (docker build $(docker_build_options))
 buildx_image = (docker buildx build --push --platform linux/amd64,linux/arm64 $(docker_build_options))
 
 test_docker_container_name="test_python"
-test_cli_runs = @[ "$$(docker run --rm $(PYTHON_VERSION_TAG) python -v ] || (echo "TEST $(PYTHON_VERSION_TAG) FAILED - cli did not run"; exit 1)
+test_cli_runs = @[ "$$(docker run --rm $(PYTHON_VERSION_TAG) python -V)" ] || (echo "TEST $(PYTHON_VERSION_TAG) FAILED - cli did not run"; exit 1)
 
 # build for current platform only.
 build:
