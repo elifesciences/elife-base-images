@@ -1,4 +1,5 @@
 PHP_MAKEFILE = Makefile-php
+PYTHON_MAKEFILE = Makefile-python
 COMMIT=develop
 
 REPO_PREFIX=elifesciences/
@@ -79,3 +80,18 @@ buildx-and-push-php-8.3:
 	@$(MAKE) -f $(PHP_MAKEFILE) COMMIT=$(COMMIT) REPO_PREFIX=$(REPO_PREFIX) PHP_VERSION=8.3 buildx
 buildx-and-push-php-8.4:
 	@$(MAKE) -f $(PHP_MAKEFILE) COMMIT=$(COMMIT) REPO_PREFIX=$(REPO_PREFIX) PHP_VERSION=8.4 buildx
+
+
+build-python: build-python-3.8 build-python-3.9 build-python-3.10 build-python-3.11 build-python-3.12 build-python-3.13
+build-python-3.8:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.8 build
+build-python-3.9:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.9 build
+build-python-3.10:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.10 build
+build-python-3.11:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.11 build
+build-python-3.12:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.12 build
+build-python-3.13:
+	@$(MAKE) -f $(PYTHON_MAKEFILE) REPO_PREFIX=$(REPO_PREFIX) PYTHON_VERSION=3.13 build
