@@ -2,6 +2,7 @@ name: build-and-push-python
 on:
   push:
     paths:
+      - '**'
       - '!php_image_digests.txt'
       - '!Makefile-php'
     branches:
