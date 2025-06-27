@@ -30,5 +30,6 @@
       "enabled": false
     }
   ],
-  "automerge": true
+  "automerge": true,
+  "platformAutomerge": true
 }
