@@ -15,10 +15,21 @@
         "PHP_IMAGE_.+=(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)"
       ],
       "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^python_image_digests.txt"
+      ],
+      "matchStrings": [
+        "PYTHON_IMAGE_.+=(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)"
+      ],
+      "datasourceTemplate": "docker"
     }
   ],
   "includePaths": [
     "php_image_digests.txt",
+    "python_image_digests.txt",
     ".github/**"
   ],
   "packageRules": [
