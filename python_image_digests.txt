@@ -3,7 +3,7 @@
 
 PYTHON_IMAGE_3.8=python:3.8-slim-bullseye@sha256:e191a71397fd61fbddb6712cd43ef9a2c17df0b5e7ba67607128554cd6bff267
 PYTHON_IMAGE_3.9=python:3.9-slim-bullseye@sha256:5765e2feb8ceaf5b453ca1b298f8efbd7e42c133f4f166dda7396959b1a9cac8
-PYTHON_IMAGE_3.10=python:3.10-slim-bullseye@sha256:11f05f1647567bfbec331b66ef72ee852c1ab2b386bba5c689af06f0f692faf6
+PYTHON_IMAGE_3.10=python:3.10-slim-bullseye@sha256:f1fb49e4d5501ac93d0ca519fb7ee6250842245aba8612926a46a0832a1ed089
 PYTHON_IMAGE_3.11=python:3.11-slim-bullseye@sha256:4f050394f601e9411800e2253857c8bdc1a6830bf9ae667582fe8cf365891ce8
 PYTHON_IMAGE_3.12=python:3.12-slim-bullseye@sha256:61c51e79082f1818f9e266ba32892506c8d6ac5cfb79386865fd351ddf6cbbda
 PYTHON_IMAGE_3.13=python:3.13-slim-bullseye@sha256:631af3fee9d0b0a046855a62af745c1f94b75c5309be8802a0928cce3ac0f98d
