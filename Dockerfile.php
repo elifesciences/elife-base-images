@@ -1,7 +1,7 @@
 ARG BASE_IMAGE
 
 # Shared layers
-FROM ${BASE_IMAGE} as base
+FROM ${BASE_IMAGE} AS base
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
@@ -19,14 +19,14 @@ COPY config/php-ext-opcache.ini ${PHP_INI_DIR}/conf.d/ext-opcache.ini
 
 
 # CLI target
-FROM base as cli
+FROM base AS cli
 
 COPY config/php-7.1-elife-cli.ini ${PHP_INI_DIR}/conf.d/elife-cli.ini
 USER www-data
 
 
 # FPM target
-FROM base as fpm
+FROM base AS fpm
 
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
