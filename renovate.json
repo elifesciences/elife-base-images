@@ -2,9 +2,7 @@
   "extends": [
     "config:recommended"
   ],
-  "assignees": [
-    "scottaubrey"
-  ],
+  "assigneesFromCodeOwners": true,
   "customManagers": [
     {
       "customType": "regex",
