@@ -18,5 +18,5 @@ PHP_IMAGE_8.3_cli=php:8.3-cli-bullseye@sha256:ce8ad0e306131c2fa3fe613aa167c36017
 PHP_IMAGE_8.3_fpm=php:8.3-fpm-bullseye@sha256:ebde4828d69f0c755ae824718ed9089b0fc90b8c8f3ef365eb014c097c412a40
 PHP_IMAGE_8.4_cli=php:8.4-cli-bullseye@sha256:aa9ca431aa35219492184f73202359109e172e33710e7d9928ee7da600b60cb7
 PHP_IMAGE_8.4_fpm=php:8.4-fpm-bullseye@sha256:990ee906e25f852f3c384b41d78b4e1a777376ef11e16e1c4cdd8d1cf7d2e76e
-PHP_IMAGE_8.5_cli=php:8.5-cli-trixie@sha256:ed47882f75aed5a761ffcf222739b09a930effd8b815309faa1f7e80f094067b
+PHP_IMAGE_8.5_cli=php:8.5-cli-trixie@sha256:5cfde668d96015de9af7aebfd6595c0930ebc6884e9ca3cd463df69cdb7e6286
 PHP_IMAGE_8.5_fpm=php:8.5-fpm-trixie@sha256:1d5383bede61294dd5fcbf8e4e9f3f45c8e549afd10eab6cc7db55dfb58d9d88
