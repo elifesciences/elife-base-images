@@ -1,6 +1,6 @@
 ARG BASE_IMAGE
 
-# Shared layers
+# Shared layers
 FROM ${BASE_IMAGE} AS base
 
 # This is a fix for buster and bullseye images being moved to the debian archive
@@ -31,7 +31,7 @@ COPY config/php-7.1-elife-cli.ini ${PHP_INI_DIR}/conf.d/elife-cli.ini
 USER www-data
 
 
-# FPM target
+# FPM target
 FROM base AS fpm
 
 RUN apt-get update \

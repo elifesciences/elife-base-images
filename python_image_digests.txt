@@ -1,4 +1,4 @@
-# THESE digests are read by Makefile-python to get a stable image
+# THESE digests are read by Makefile-python to get a stable image
 
 
 PYTHON_IMAGE_3.8=python:3.8-slim-bullseye@sha256:e191a71397fd61fbddb6712cd43ef9a2c17df0b5e7ba67607128554cd6bff267

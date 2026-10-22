@@ -1,4 +1,4 @@
-# THESE digests are read by Makefile-php to get a stable image
+# THESE digests are read by Makefile-php to get a stable image
 
 PHP_IMAGE_7.1_cli=php:7.1-cli-buster@sha256:e0e6ced092bbf073e4f3e48545a8e1a2592217b3346ef0cb8b18ecacf8ae1522
 PHP_IMAGE_7.1_fpm=php:7.1-fpm-buster@sha256:8c526fa0d10f4cdb1db1dd6dc6c277fae74719bc7ea73b536ea16c389e3fe436
