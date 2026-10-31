@@ -17,6 +17,6 @@ PHP_IMAGE_8.2_fpm=php:8.2-fpm-trixie@sha256:2db6701e5d354824173c0ee3b1b33ddb99bf
 PHP_IMAGE_8.3_cli=php:8.3-cli-trixie@sha256:60a100afa8efd88c0f556ce60e891c9bb8b1e8bca15721e4db07eca4fa79c07a
 PHP_IMAGE_8.3_fpm=php:8.3-fpm-trixie@sha256:c435accaeb7c535cacf8d6d188fc310431f4fc54545b1694a793069185271dcb
 PHP_IMAGE_8.4_cli=php:8.4-cli-trixie@sha256:40638d9d5ec50bbf20205a06c733fff5839fc13b0a7c8e10e455b49da2a13068
-PHP_IMAGE_8.4_fpm=php:8.4-fpm-trixie@sha256:cc7cdfe4da7d46f6e69ac653e3d3396590bf51d6d6731854d01449d0b32b704c
+PHP_IMAGE_8.4_fpm=php:8.4-fpm-trixie@sha256:3a6527017daca7917709afa08a37388ec108db093857f31d642cfff2e6f0449e
 PHP_IMAGE_8.5_cli=php:8.5-cli-trixie@sha256:d5e3f03b94966fd65df52b9819c6dde463003b5a32d032698290a0b37b53bb37
 PHP_IMAGE_8.5_fpm=php:8.5-fpm-trixie@sha256:e343d72629421d3c21064ec8d94e0c121790b0e3b2a9f594e8f366123e45ecaa
